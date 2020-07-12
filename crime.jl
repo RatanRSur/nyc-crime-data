@@ -1,8 +1,3 @@
-import Pkg
-Pkg.add("HTTP")
-Pkg.add("ExcelReaders")
-Pkg.build("PyCall")
-
 using HTTP
 using ExcelReaders
 
