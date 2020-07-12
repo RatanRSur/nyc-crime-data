@@ -1,6 +1,9 @@
+import Pkg
+Pkg.add("HTTP")
+Pkg.add("ExcelReaders")
+
 using HTTP
 using ExcelReaders
-using Pkg
 
 const GET = "GET"
 
