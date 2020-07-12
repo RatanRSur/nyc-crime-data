@@ -24,7 +24,7 @@ for precinct_number in ARGS[2:end]
 
   dates = replace(replace(replace(read_cell("C9"), "Report Covering the Week  " => ""), "  Through  " => "-"), "/" => ".")
 
-  precinct_destination = "$destination_dir/$precinct_number"
+  precinct_destination = join(["$destination_dir/$precinct_number", "th Precinct"])
   mkpath(precinct_destination)
   mv(temp_filename, "$precinct_destination/$dates.xlsx")
 end
